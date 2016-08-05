@@ -1,0 +1,10 @@
+<% provide(:title, "New Post") %>
+<h1>New Post</h1>
+
+<%= form_for @post, url: '/new_post' do |f| %>
+<p>
+	<%= f.label :body %>
+ 	<%= f.text_field :body %>
+</p>
+<p><%= f.submit %></p>
+<% end %>
